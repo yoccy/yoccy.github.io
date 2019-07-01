@@ -1,8 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
-hello
-
-test edit
-<br>
-I am {{ name }}.
+<div class="h2 text-center">
+    <img class="icon-img" src="{{ url_for('static', filename='images/homepage1.jpg')}}" alt="アイコン画像">
+    <p class="pb-1">こんにちは！<span class="font-weight-bold text-danger" data-toggle="tooltip" title="ハンドルネーム">yoccy</span>と申します
+    </p>
+    <p class="pb-1">関西の大学に通う大学生です</p>
+    <p class="pb-1">趣味は漫画とアニメと機械学習です</p>
+</div>
 {% endblock %}

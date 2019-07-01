@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+.navbar-brand {
+    font-size: 30px;
+    color: #fd6161;
+}
+
+.nav-link {
+    font-size: 25px;
+}
+
+.icon-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 400px;
+}
+
+.card {
+    width: 20rem;
+}
+
