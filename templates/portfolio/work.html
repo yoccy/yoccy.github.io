@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <h1>{{ work['name'] }}</h1>
+    <hr>
+    <img src="{{ url_for('static', filename=work.image) }}" alt="{{ work.name }}" class="work-image">
+
+    <br><br>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th style="width:100px">名前</th>
+                <td>{{ work.name }}</td>
+            </tr>
+            <tr>
+                <th>説明</th>
+                <td>{{ work.description }}</td>
+            </tr>
+            <tr>
+                <th>作成日</th>
+                <td>{{ work.date }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+{% endblock %}

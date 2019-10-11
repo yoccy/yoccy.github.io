@@ -5,13 +5,15 @@
 <br>
 
 <div class="card-columns">
+    {% for work in all_works %}
     <div class="card">
-        <img class="card-img-top" src="{{ url_for('static', filename='images/homepage1.jpg') }}" alt="nomepage">
+        <img class="card-img-top" src="{{ url_for('static', filename='images/homepage1.jpg') }}" alt="homepage">
         <div class="card-body">
             <h3 class="card-title">ホームページ</h3>
-            <a href="#" class="btn btn-primary">詳細</a>
+            <a href="{{ url_for('work', work_name=work.name) }}" class="btn btn-primary card-button">詳細</a>
         </div>
     </div>
+    {% endfor %}
 </div>
 
 
